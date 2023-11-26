@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dwstkm57dt088"]
 
-[ext_resource type="PackedScene" path="res://Dude2/Dude2.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://q3dsvjnxp6fe" path="res://Dude2/Dude2.tscn" id="1"]
 [ext_resource type="PackedScene" path="res://Action RPG Resources/My Stuff/Box.tscn" id="2"]
 [ext_resource type="Texture2D" uid="uid://dasr27j2o3jpb" path="res://Action RPG Resources/My Stuff/BackgroundTile1.png" id="3"]
 
