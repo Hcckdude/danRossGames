@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Lazer.gd" type="Script" id=1]
-[ext_resource path="res://My_Stuff/Untitled-1.png" type="Texture" id=2]
+[ext_resource path="res://My_Stuff/Untitled-1.png" type="Texture2D" id=2]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -12,7 +12,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 29, 7 )
+size = Vector2( 29, 7 )
 
 [node name="Lazer" type="Area2D"]
 rotation = 3.14159
@@ -21,7 +21,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 frames = SubResource( 1 )
 animation = "Lazer"
 flip_h = true
@@ -29,8 +29,8 @@ flip_h = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 2 )
 
-[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 position = Vector2( -4, -2.38419e-07 )
 scale = Vector2( 3.3, 0.7 )
 
-[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

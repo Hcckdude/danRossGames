@@ -11,28 +11,31 @@ func _ready():
 func set_lazer_direction(dir):
 	direction = dir
 	if dir == -1:
-		$AnimatedSprite.flip_h = true
-	elif dir == -1.1:
-		$AnimatedSprite.flip_v = true
-	
+		$AnimatedSprite2D.flip_h = false
+	elif direction == - 1.1:
+		$AnimatedSprite2D.rotation_degrees = -90
+		$AnimatedSprite2D.flip_h = false
+		
+	elif direction == 1.1:
+		$AnimatedSprite2D.rotation_degrees = 90
+		$AnimatedSprite2D.flip_h = false
+		
 	
 func _physics_process(delta):
 	if direction == 1 :
-		print("1 direction verticle", direction)
 		velocity.x = SPEED * delta * direction
 	elif direction == -1:
-		print("2 direction verticle", direction)
 		velocity.x = SPEED * delta * direction
 	elif direction == - 1.1:
-		print("3 direction verticle", direction)
+		$AnimatedSprite2D.rotation_degrees = 90
 		velocity.y = SPEED * delta * direction
 	elif direction == 1.1:
+		$AnimatedSprite2D.rotation_degrees = -90
 		velocity.y = SPEED * delta * direction
-		print("4 direction verticle", direction)
-		
+
 	#velocity.x = SPEED * delta
 	translate(velocity)
-	$AnimatedSprite.play("Lazer")
+	$AnimatedSprite2D.play("Lazer")
 
 func launch(direction):
 	var temp = global_position

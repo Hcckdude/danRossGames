@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://Dude/Dudes.png" type="Texture" id=1]
+[ext_resource path="res://Dude/Dudes.png" type="Texture2D" id=1]
 [ext_resource path="res://WalkRight.tres" type="Animation" id=2]
 [ext_resource path="res://WalkLeft.tres" type="Animation" id=3]
 [ext_resource path="res://FrontRoll.tres" type="Animation" id=4]
@@ -12,10 +12,10 @@
 [ext_resource path="res://IdleRight.tres" type="Animation" id=10]
 [ext_resource path="res://IdleBack.tres" type="Animation" id=11]
 
-[node name="Dude3" type="KinematicBody2D"]
+[node name="Dude3" type="CharacterBody2D"]
 script = ExtResource( 7 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2( 435, 281 )
 scale = Vector2( 0.420133, 0.395 )
 texture = ExtResource( 1 )

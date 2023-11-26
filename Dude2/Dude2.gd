@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 const ACCELERATION = 500
 const MAX_SPEED = 100
@@ -14,7 +14,7 @@ enum {
 
 
 var state = MOVE
-var velocity = Vector2.ZERO
+
 var roll_vector = Vector2.LEFT
 var KeyHeld = false
 var right = false;
@@ -23,14 +23,15 @@ var up = false;
 var down = false;
 
 
-onready var animationPlayer = $AnimationPlayer
-onready var animationTree = $AnimationTree
-onready var animationState = animationTree.get("parameters/playback")
+@onready var animationPlayer = $AnimationPlayer
+@onready var animationTree = $AnimationTree
+@onready var animationState = animationTree.get("parameters/playback")
 
 func _ready():
 	animationTree.active = true
 
 func _physics_process(delta):
+	var velocity = Vector2.ZERO
 	match state:
 		MOVE:
 			move_state(delta)
@@ -86,7 +87,7 @@ func move_state(delta):
 		
 		
 		if Input.is_action_just_pressed("shoot"):
-			var Lazer = lazer.instance()
+			var Lazer = lazer.instantiate()
 			print('lazer = ', Lazer)
 			#if sign($Position2D.postion.x) == 1:
 				#Lazer.set_lazer_direction(1)
@@ -112,7 +113,7 @@ func move_state(delta):
 			
 			elif up:
 			
-				Lazer.position = $Node2D/Position2D.global_position
+				Lazer.position = $Node2D/Marker2D.global_position
 				Lazer.set_lazer_direction(-1.1)
 				
 			
@@ -140,7 +141,9 @@ func roll_state(delta):
 	move()
 		
 func move():
-	velocity = move_and_slide(velocity)
+	set_velocity(velocity)
+	move_and_slide()
+	velocity = velocity
 
 func roll_animation_finished():
 	state = MOVE

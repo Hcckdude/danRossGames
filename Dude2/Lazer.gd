@@ -10,7 +10,7 @@ func _ready():
 func _physics_process(delta):
 	velocity.x = SPEED * delta
 	translate(velocity)
-	$AnimatedSprite.play("Lazer")
+	$AnimatedSprite2D.play("Lazer")
 
 func launch(direction):
 	var temp = global_position
