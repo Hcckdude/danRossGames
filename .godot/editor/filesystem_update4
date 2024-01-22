@@ -1,6 +1,8 @@
 res://default_env.tres
 res://Experiment.tscn
-res://Dude2/Dude2.gd
+res://HUD.gd
 res://Lazer.tscn
-res://Lazer.gd
 res://Dude2/Dude2.tscn
+res://enemy.tscn
+res://Dude2/Dude2.gd
+res://Action RPG Resources/My Stuff/Box.tscn

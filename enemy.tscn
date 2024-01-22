@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://c5bxts2n1j0h0"]
+
+[ext_resource type="Script" path="res://enemy.gd" id="1_8t4r2"]
+[ext_resource type="Texture2D" uid="uid://n1d54uukaqbn" path="res://imgs/ratEnemy/rat2BigMamu.png" id="1_ghpah"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_44ex4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ghpah")
+}],
+"loop": true,
+"name": &"ratWalk",
+"speed": 3.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fqbdx"]
+radius = 37.0
+height = 168.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bkfky"]
+size = Vector2(122, 80.5)
+
+[node name="Enemy" type="RigidBody2D"]
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource("1_8t4r2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_44ex4")
+animation = &"ratWalk"
+frame_progress = 0.97291
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(7, 2)
+shape = SubResource("CapsuleShape2D_fqbdx")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="HitBox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(-1, -31.25)
+shape = SubResource("RectangleShape2D_bkfky")
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
+[connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]

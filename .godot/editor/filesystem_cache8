@@ -1,151 +1,159 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700961189
-default_env.tres::Environment::-1::1700961172::0::1::::<><>::
-Dude3.gd::GDScript::-1::1700961172::0::1::::<>CharacterBody2D<>::
-Dude3.tscn::PackedScene::-1::1700961172::0::1::::<><>::res://Dude/Dudes.png<>res://WalkRight.tres<>res://WalkLeft.tres<>res://FrontRoll.tres<>res://WalkAway.tres<>res://WalkForward.tres<>res://Dude3.gd<>res://IdleFront.tres<>res://IdleLeft.tres<>res://IdleRight.tres<>res://IdleBack.tres
-Experiment23.tscn::PackedScene::-1::1700961172::0::1::::<><>::res://Dude2/Dude2.tscn<>res://Action RPG Resources/My Stuff/Box.tscn<>res://Action RPG Resources/Roadautotile2.png<>res://Action RPG Resources/My Stuff/BackgroundTile1.png
-Experiment.tscn::PackedScene::-1::1700961172::0::1::::<><>::res://Dude2/Dude2.tscn<>res://Action RPG Resources/My Stuff/Box.tscn<>res://Action RPG Resources/My Stuff/BackgroundTile1.png<>res://Action RPG Resources/Roadautotile2.png
-FrontRoll.tres::Animation::-1::1700961172::0::1::::<><>::
-Goon.gd::GDScript::-1::1662839566::0::1::::<>RefCounted<>::
-Goon.tscn::PackedScene::-1::1700961172::0::1::::<><>::res://My_Stuff/Goon_1.png<>res://Goon.gd
-icon.png::CompressedTexture2D::668599878429183284::1662839566::1700961192::1::::<><>::
-IdleBack.tres::Animation::-1::1700961172::0::1::::<><>::
-IdleFront.tres::Animation::-1::1700961173::0::1::::<><>::
-IdleLeft.tres::Animation::-1::1700961173::0::1::::<><>::
-IdleRight.tres::Animation::-1::1700961173::0::1::::<><>::
-Lazer.gd::GDScript::-1::1700961173::0::1::::<>Area2D<>::
-Lazer.tscn::PackedScene::-1::1700961173::0::1::::<><>::res://Lazer.gd<>res://My_Stuff/Untitled-1.png
-Projectile.gd::GDScript::-1::1700961173::0::1::::<>CharacterBody2D<>::
-Projectile.tscn::PackedScene::-1::1700961173::0::1::::<><>::res://Projectile.gd<>res://My_Stuff/Untitled-1.png
-README.md::TextFile::-1::1662839566::0::1::::<><>::
-VERSION.md::TextFile::-1::1662839566::0::1::::<><>::
-WalkAway.tres::Animation::-1::1700961173::0::1::::<><>::
-WalkForward.tres::Animation::-1::1700961173::0::1::::<><>::
-WalkLeft.tres::Animation::-1::1700961173::0::1::::<><>::
-WalkRight.tres::Animation::-1::1700961173::0::1::::<><>::
-::res://Action RPG Resources/::1662837611
-Player.gd::GDScript::-1::1700961173::0::1::::<>CharacterBody2D<>::
-Roadautotile2.png::CompressedTexture2D::5841467784504369388::1662837571::1700961193::1::::<><>::
-Roadautotile.png::CompressedTexture2D::7333855737513424921::1662837571::1700961193::1::::<><>::
-::res://Action RPG Resources/Effects/::1662837613
-EnemyDeathEffect.png::CompressedTexture2D::4597015198283285976::1662837571::1700961192::1::::<><>::
-GrassEffect.png::CompressedTexture2D::9193485569215565357::1662837571::1700961192::1::::<><>::
-HitEffect.png::CompressedTexture2D::1100603375095445967::1662837571::1700961192::1::::<><>::
-::res://Action RPG Resources/Enemies/::1662837613
-Bat.png::CompressedTexture2D::1919745219952580044::1662837571::1700961192::1::::<><>::
-::res://Action RPG Resources/Music and Sounds/::1662837613
-EnemyDie.wav::AudioStreamWAV::4792968785184139263::1662837571::1700961208::1::::<><>::
-Evade.wav::AudioStreamWAV::1579613541968321889::1662837571::1700961208::1::::<><>::
-Hit.wav::AudioStreamWAV::1556293653770477605::1662837571::1700961208::1::::<><>::
-Hurt.wav::AudioStreamWAV::2341404893922527784::1662837571::1700961208::1::::<><>::
-Menu Move.wav::AudioStreamWAV::4019710171956381246::1662837571::1700961208::1::::<><>::
-Menu Select.wav::AudioStreamWAV::1999613354463479125::1662837571::1700961208::1::::<><>::
-Music.mp3::AudioStreamMP3::6210798790402157923::1662837571::1700961191::1::::<><>::
-Pause.wav::AudioStreamWAV::4752295269093590552::1662837571::1700961208::1::::<><>::
-Swipe.wav::AudioStreamWAV::2152772972528600721::1662837571::1700961208::1::::<><>::
-Unpause.wav::AudioStreamWAV::6947178602469639336::1662837571::1700961208::1::::<><>::
-::res://Action RPG Resources/My Stuff/::1662837613
-BackgroundTile1.png::CompressedTexture2D::7197502951861862147::1662837571::1700961192::1::::<><>::
-Box.png::CompressedTexture2D::2020721878309380270::1662837571::1700961192::1::::<><>::
-Box.tscn::PackedScene::-1::1700961174::0::1::::<><>::res://Action RPG Resources/My Stuff/Box.png
-TileRoad.png::CompressedTexture2D::1955267259830619816::1662837571::1700961192::1::::<><>::
-::res://Action RPG Resources/Player/::1662837613
-Dude.gd::GDScript::-1::1700961173::0::1::::<>CharacterBody2D<>::
-Main_Guy.gd::GDScript::-1::1700961173::0::1::::<>CharacterBody2D<>::
-Player.png::CompressedTexture2D::1290889811908665776::1662837571::1700961192::1::::<><>::
-spritesheet-0.png::CompressedTexture2D::6930669300253769409::1662837571::1700961194::1::::<><>::
-::res://Action RPG Resources/Player/spritesheet.sprites/::1662837571
-tile000.tres::AtlasTexture::-1::1700961174::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
-tile001.tres::AtlasTexture::-1::1700961174::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
-tile002.tres::AtlasTexture::-1::1700961174::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
-tile003.tres::AtlasTexture::-1::1700961174::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
-tile004.tres::AtlasTexture::-1::1700961174::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
-tile005.tres::AtlasTexture::-1::1700961174::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
-tile006.tres::AtlasTexture::-1::1700961174::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
-tile007.tres::AtlasTexture::-1::1700961174::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
-tile008.tres::AtlasTexture::-1::1700961174::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
-tile009.tres::AtlasTexture::-1::1700961174::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
-tile010.tres::AtlasTexture::-1::1700961174::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
-tile011.tres::AtlasTexture::-1::1700961174::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
-tile012.tres::AtlasTexture::-1::1700961174::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
-tile013.tres::AtlasTexture::-1::1700961174::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
-::res://Action RPG Resources/Shadows/::1662837611
-LargeShadow.png::CompressedTexture2D::4865067552273790269::1662837571::1700961192::1::::<><>::
-MediumShadow.png::CompressedTexture2D::5363077481630491211::1662837571::1700961192::1::::<><>::
-SmallShadow.png::CompressedTexture2D::2394178326375896816::1662837571::1700961192::1::::<><>::
-::res://Action RPG Resources/UI/::1662837611
-HeartUIEmpty.png::CompressedTexture2D::4171822161242935513::1662837571::1700961192::1::::<><>::
-HeartUIFull.png::CompressedTexture2D::6110943904367815123::1662837571::1700961192::1::::<><>::
-::res://Action RPG Resources/World/::1662837611
-Bush.png::CompressedTexture2D::7580656531962918446::1662837571::1700961192::1::::<><>::
-Bush.tscn::PackedScene::-1::1700961173::0::1::::<><>::res://Action RPG Resources/World/Bush.png
-CliffTileset.png::CompressedTexture2D::3980165883507707350::1662837571::1700961192::1::::<><>::
-DirtTileset.png::CompressedTexture2D::7178809048926284657::1662837571::1700961192::1::::<><>::
-Grass.png::CompressedTexture2D::8120816327149432751::1662837571::1700961193::1::::<><>::
-GrassBackground.png::CompressedTexture2D::5502937931247991020::1662837571::1700961193::1::::<><>::
-Tree.png::CompressedTexture2D::5045066096265399531::1662837571::1700961193::1::::<><>::
-::res://Dude/::1662839242
-Dude32.png::CompressedTexture2D::2734098688261354686::1662839195::1700961195::1::::<><>::
-Dude.tscn::PackedScene::-1::1700961173::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png<>res://Action RPG Resources/Player/Dude.gd
-Dudes.png::CompressedTexture2D::6858427376426615696::1662839195::1700961208::1::::<><>::
-Hmm.png::CompressedTexture2D::2522496435955359568::1662839195::1700961199::1::::<><>::
-Sprite-Check.png::CompressedTexture2D::7146392295957973257::1662839195::1700961205::1::::<><>::
-::res://Dude2/::1700954260
-Dude2.gd::GDScript::-1::1700961173::0::1::::<>CharacterBody2D<>::
-Dude2.tscn::PackedScene::-1::1700961173::0::1::::<><>::res://Dude/Dudes.png<>res://Dude2/Dude2.gd
-Experiment.tscn::PackedScene::-1::1700961173::0::1::::<><>::res://Dude2/Dude2.tscn<>res://Action RPG Resources/My Stuff/Box.tscn<>res://Action RPG Resources/My Stuff/BackgroundTile1.png<>res://Action RPG Resources/Roadautotile2.png
-Lazer.gd::GDScript::-1::1700961173::0::1::::<>Area2D<>::
-Lazer.tscn::PackedScene::-1::1700961173::0::1::::<><>::res://Lazer.gd<>res://My_Stuff/Untitled-1.png
-Projectile.gd::GDScript::-1::1700961173::0::1::::<>CharacterBody2D<>::
-Projectile.tscn::PackedScene::-1::1700961173::0::1::::<><>::res://Projectile.gd<>res://My_Stuff/Untitled-1.png
-::res://My_Stuff/::1662839868
-Goon_1.png::CompressedTexture2D::8626023785811794367::1662839841::1700961196::1::::<><>::
-Untitled-1.png::CompressedTexture2D::226084951645661456::1662839841::1700961192::1::::<><>::
-::res://My_Stuff/Goon1/::1662839872
-tile000.png::CompressedTexture2D::4341800014129685831::1662839841::1700961193::1::::<><>::
-tile001.png::CompressedTexture2D::2944548771700564714::1662839841::1700961193::1::::<><>::
-tile002.png::CompressedTexture2D::2201777231727158137::1662839841::1700961193::1::::<><>::
-tile003.png::CompressedTexture2D::7500343107161309652::1662839841::1700961193::1::::<><>::
-tile004.png::CompressedTexture2D::557290696221787236::1662839841::1700961193::1::::<><>::
-tile005.png::CompressedTexture2D::1795942581760280432::1662839841::1700961193::1::::<><>::
-tile006.png::CompressedTexture2D::4422743794920920372::1662839841::1700961193::1::::<><>::
-tile007.png::CompressedTexture2D::2062608939014445423::1662839841::1700961193::1::::<><>::
-tile008.png::CompressedTexture2D::6765958275924703702::1662839841::1700961192::1::::<><>::
-tile009.png::CompressedTexture2D::5065146278765739162::1662839841::1700961192::1::::<><>::
-tile010.png::CompressedTexture2D::1003359210864278564::1662839841::1700961192::1::::<><>::
-tile011.png::CompressedTexture2D::2598599488417824148::1662839841::1700961192::1::::<><>::
-tile012.png::CompressedTexture2D::1000288637703896699::1662839841::1700961192::1::::<><>::
-tile013.png::CompressedTexture2D::5969178708267533428::1662839841::1700961192::1::::<><>::
-tile014.png::CompressedTexture2D::1623449014686850490::1662839841::1700961192::1::::<><>::
-tile015.png::CompressedTexture2D::2267855870014549011::1662839841::1700961192::1::::<><>::
-tile016.png::CompressedTexture2D::4763741328170716933::1662839841::1700961192::1::::<><>::
-tile017.png::CompressedTexture2D::6619126766918379632::1662839841::1700961192::1::::<><>::
-tile018.png::CompressedTexture2D::6016729266953085731::1662839841::1700961192::1::::<><>::
-tile019.png::CompressedTexture2D::1485383254259567332::1662839841::1700961192::1::::<><>::
-tile020.png::CompressedTexture2D::4645696866593397954::1662839841::1700961192::1::::<><>::
-tile021.png::CompressedTexture2D::8281555485523400614::1662839841::1700961192::1::::<><>::
-tile022.png::CompressedTexture2D::7202626926657914572::1662839841::1700961192::1::::<><>::
-tile023.png::CompressedTexture2D::9056637334658259243::1662839841::1700961191::1::::<><>::
-tile024.png::CompressedTexture2D::6847747162127453611::1662839841::1700961191::1::::<><>::
-tile025.png::CompressedTexture2D::319380062124711884::1662839841::1700961191::1::::<><>::
-tile026.png::CompressedTexture2D::1972778056494106813::1662839841::1700961191::1::::<><>::
-tile027.png::CompressedTexture2D::5814776295816738488::1662839841::1700961191::1::::<><>::
-tile028.png::CompressedTexture2D::1329101401227130767::1662839841::1700961191::1::::<><>::
-tile029.png::CompressedTexture2D::3779240997205664398::1662839841::1700961192::1::::<><>::
-tile030.png::CompressedTexture2D::6749609983539796483::1662839841::1700961192::1::::<><>::
-tile031.png::CompressedTexture2D::138719729785374796::1662839841::1700961192::1::::<><>::
-tile032.png::CompressedTexture2D::6769049918039191617::1662839841::1700961192::1::::<><>::
-tile033.png::CompressedTexture2D::7182042780290558847::1662839841::1700961192::1::::<><>::
-tile034.png::CompressedTexture2D::4523884418513697637::1662839841::1700961192::1::::<><>::
-tile035.png::CompressedTexture2D::6539944650522421165::1662839841::1700961192::1::::<><>::
-tile036.png::CompressedTexture2D::2374676713693732037::1662839841::1700961192::1::::<><>::
-tile037.png::CompressedTexture2D::233541621555072487::1662839841::1700961192::1::::<><>::
-tile038.png::CompressedTexture2D::8996089819042699114::1662839841::1700961192::1::::<><>::
-tile039.png::CompressedTexture2D::6794282551790151831::1662839841::1700961192::1::::<><>::
-tile040.png::CompressedTexture2D::3327141273571393559::1662839841::1700961192::1::::<><>::
-tile041.png::CompressedTexture2D::1387946707851710789::1662839841::1700961192::1::::<><>::
-tile042.png::CompressedTexture2D::4614923267170181998::1662839841::1700961192::1::::<><>::
-tile043.png::CompressedTexture2D::5830064800416902370::1662839841::1700961192::1::::<><>::
-tile044.png::CompressedTexture2D::5436717953408746765::1662839841::1700961192::1::::<><>::
-tile045.png::CompressedTexture2D::4870450544555024382::1662839841::1700961192::1::::<><>::
-tile046.png::CompressedTexture2D::4122025501814066996::1662839841::1700961192::1::::<><>::
+::res://::1705880279
+default_env.tres::Environment::1393597701871749163::1705866124::0::1::::<><>::
+Dude3.gd::GDScript::-1::1701015824::0::1::::<>CharacterBody2D<>::
+Dude3.tscn::PackedScene::-1::1701015824::0::1::::<><>::res://Dude/Dudes.png<>res://WalkRight.tres<>res://WalkLeft.tres<>res://FrontRoll.tres<>res://WalkAway.tres<>res://WalkForward.tres<>res://Dude3.gd<>res://IdleFront.tres<>res://IdleLeft.tres<>res://IdleRight.tres<>res://IdleBack.tres
+enemy.gd::GDScript::-1::1701039203::0::1::::<>RigidBody2D<>::
+enemy.tscn::PackedScene::6882002462954865075::1705866124::0::1::::<><>::res://enemy.gd<>uid://n1d54uukaqbn::::res://imgs/ratEnemy/rat2BigMamu.png
+Experiment23.tscn::PackedScene::-1::1701015824::0::1::::<><>::res://Dude2/Dude2.tscn<>res://Action RPG Resources/My Stuff/Box.tscn<>res://Action RPG Resources/Roadautotile2.png<>res://Action RPG Resources/My Stuff/BackgroundTile1.png
+Experiment.tscn::PackedScene::8741747569573756975::1705866124::0::1::::<><>::uid://q3dsvjnxp6fe::::res://Dude2/Dude2.tscn<>res://World.gd<>uid://co4vm36c0olp5::::res://imgs/spaeStationMoon - Copy.jpg<>res://Action RPG Resources/My Stuff/Box.tscn<>uid://c5bxts2n1j0h0::::res://enemy.tscn<>res://HUD.gd
+FrontRoll.tres::Animation::-1::1701015824::0::1::::<><>::
+Goon.gd::GDScript::-1::1701015824::0::1::::<>RefCounted<>::
+Goon.tscn::PackedScene::-1::1701015824::0::1::::<><>::res://My_Stuff/Goon_1.png<>res://Goon.gd
+HUD.gd::GDScript::-1::1705864187::0::1::::<>CanvasLayer<>::
+icon.png::CompressedTexture2D::668599878429183284::1701015824::1701015824::1::::<><>::
+IdleBack.tres::Animation::-1::1701015824::0::1::::<><>::
+IdleFront.tres::Animation::-1::1701015824::0::1::::<><>::
+IdleLeft.tres::Animation::-1::1701015824::0::1::::<><>::
+IdleRight.tres::Animation::-1::1701015824::0::1::::<><>::
+Lazer.gd::GDScript::-1::1701015824::0::1::::<>Area2D<>::
+Lazer.tscn::PackedScene::7615137640483418656::1705866124::0::1::::<><>::res://Lazer.gd<>uid://dhrt6s7fy1ma::::res://My_Stuff/Untitled-1.png
+Projectile.gd::GDScript::-1::1701015824::0::1::::<>CharacterBody2D<>::
+Projectile.tscn::PackedScene::-1::1701015824::0::1::::<><>::res://Projectile.gd<>res://My_Stuff/Untitled-1.png
+README.md::TextFile::-1::1701015824::0::1::::<><>::
+VERSION.md::TextFile::-1::1701015824::0::1::::<><>::
+WalkAway.tres::Animation::-1::1701015824::0::1::::<><>::
+WalkForward.tres::Animation::-1::1701015824::0::1::::<><>::
+WalkLeft.tres::Animation::-1::1701015824::0::1::::<><>::
+WalkRight.tres::Animation::-1::1701015824::0::1::::<><>::
+World.gd::GDScript::-1::1701054279::0::1::::<>Node2D<>::
+::res://Action RPG Resources/::1701015823
+Player.gd::GDScript::-1::1701015823::0::1::::<>CharacterBody2D<>::
+Roadautotile2.png::CompressedTexture2D::5841467784504369388::1701015823::1701015823::1::::<><>::
+Roadautotile.png::CompressedTexture2D::7333855737513424921::1701015823::1701015823::1::::<><>::
+::res://Action RPG Resources/Effects/::1701015823
+EnemyDeathEffect.png::CompressedTexture2D::4597015198283285976::1701015823::1701015823::1::::<><>::
+GrassEffect.png::CompressedTexture2D::9193485569215565357::1701015823::1701015823::1::::<><>::
+HitEffect.png::CompressedTexture2D::1100603375095445967::1701015823::1701015823::1::::<><>::
+::res://Action RPG Resources/Enemies/::1701015823
+Bat.png::CompressedTexture2D::1919745219952580044::1701015823::1701015823::1::::<><>::
+::res://Action RPG Resources/Music and Sounds/::1701015823
+EnemyDie.wav::AudioStreamWAV::4792968785184139263::1701015823::1701015823::1::::<><>::
+Evade.wav::AudioStreamWAV::1579613541968321889::1701015823::1701015823::1::::<><>::
+Hit.wav::AudioStreamWAV::1556293653770477605::1701015823::1701015823::1::::<><>::
+Hurt.wav::AudioStreamWAV::2341404893922527784::1701015823::1701015823::1::::<><>::
+Menu Move.wav::AudioStreamWAV::4019710171956381246::1701015823::1701015823::1::::<><>::
+Menu Select.wav::AudioStreamWAV::1999613354463479125::1701015823::1701015823::1::::<><>::
+Music.mp3::AudioStreamMP3::6210798790402157923::1701015823::1701015823::1::::<><>::
+Pause.wav::AudioStreamWAV::4752295269093590552::1701015823::1701015823::1::::<><>::
+Swipe.wav::AudioStreamWAV::2152772972528600721::1701015823::1701015823::1::::<><>::
+Unpause.wav::AudioStreamWAV::6947178602469639336::1701015823::1701015823::1::::<><>::
+::res://Action RPG Resources/My Stuff/::1701015823
+BackgroundTile1.png::CompressedTexture2D::7197502951861862147::1701015823::1701015823::1::::<><>::
+Box.png::CompressedTexture2D::2020721878309380270::1701015823::1701015823::1::::<><>::
+Box.tscn::PackedScene::-1::1701015823::0::1::::<><>::res://Action RPG Resources/My Stuff/Box.png
+TileRoad.png::CompressedTexture2D::1955267259830619816::1701015823::1701015823::1::::<><>::
+::res://Action RPG Resources/Player/::1701015823
+Dude.gd::GDScript::-1::1701015823::0::1::::<>CharacterBody2D<>::
+Main_Guy.gd::GDScript::-1::1701015823::0::1::::<>CharacterBody2D<>::
+Player.png::CompressedTexture2D::1290889811908665776::1701015823::1701015823::1::::<><>::
+spritesheet-0.png::CompressedTexture2D::6930669300253769409::1701015823::1701015823::1::::<><>::
+::res://Action RPG Resources/Player/spritesheet.sprites/::1701015823
+tile000.tres::AtlasTexture::-1::1701015823::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
+tile001.tres::AtlasTexture::-1::1701015823::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
+tile002.tres::AtlasTexture::-1::1701015823::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
+tile003.tres::AtlasTexture::-1::1701015823::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
+tile004.tres::AtlasTexture::-1::1701015823::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
+tile005.tres::AtlasTexture::-1::1701015823::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
+tile006.tres::AtlasTexture::-1::1701015823::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
+tile007.tres::AtlasTexture::-1::1701015823::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
+tile008.tres::AtlasTexture::-1::1701015823::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
+tile009.tres::AtlasTexture::-1::1701015823::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
+tile010.tres::AtlasTexture::-1::1701015823::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
+tile011.tres::AtlasTexture::-1::1701015823::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
+tile012.tres::AtlasTexture::-1::1701015823::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
+tile013.tres::AtlasTexture::-1::1701015823::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png
+::res://Action RPG Resources/Shadows/::1701015823
+LargeShadow.png::CompressedTexture2D::4865067552273790269::1701015823::1701015823::1::::<><>::
+MediumShadow.png::CompressedTexture2D::5363077481630491211::1701015823::1701015823::1::::<><>::
+SmallShadow.png::CompressedTexture2D::2394178326375896816::1701015823::1701015823::1::::<><>::
+::res://Action RPG Resources/UI/::1701015823
+HeartUIEmpty.png::CompressedTexture2D::4171822161242935513::1701015823::1701015823::1::::<><>::
+HeartUIFull.png::CompressedTexture2D::6110943904367815123::1701015823::1701015823::1::::<><>::
+::res://Action RPG Resources/World/::1701015823
+Bush.png::CompressedTexture2D::7580656531962918446::1701015823::1701015823::1::::<><>::
+Bush.tscn::PackedScene::-1::1701015823::0::1::::<><>::res://Action RPG Resources/World/Bush.png
+CliffTileset.png::CompressedTexture2D::3980165883507707350::1701015823::1701015823::1::::<><>::
+DirtTileset.png::CompressedTexture2D::7178809048926284657::1701015823::1701015823::1::::<><>::
+Grass.png::CompressedTexture2D::8120816327149432751::1701015823::1701015823::1::::<><>::
+GrassBackground.png::CompressedTexture2D::5502937931247991020::1701015823::1701015823::1::::<><>::
+Tree.png::CompressedTexture2D::5045066096265399531::1701015823::1701015823::1::::<><>::
+::res://Dude/::1701015824
+Dude32.png::CompressedTexture2D::2734098688261354686::1701015823::1701015823::1::::<><>::
+Dude.tscn::PackedScene::-1::1701015823::0::1::::<><>::res://Action RPG Resources/Player/spritesheet-0.png<>res://Action RPG Resources/Player/Dude.gd
+Dudes.png::CompressedTexture2D::6858427376426615696::1701015823::1701015823::1::::<><>::
+Hmm.png::CompressedTexture2D::2522496435955359568::1701015824::1701015824::1::::<><>::
+Sprite-Check.png::CompressedTexture2D::7146392295957973257::1701015824::1701015824::1::::<><>::
+::res://Dude2/::1705866124
+Dude2.gd::GDScript::-1::1705866121::0::1::::<>CharacterBody2D<>::
+Dude2.tscn::PackedScene::1181039488106393970::1705866124::0::1::::<><>::uid://c4yjkdf284vqe::::res://Dude/Dudes.png<>res://Dude2/Dude2.gd
+Experiment.tscn::PackedScene::-1::1701015824::0::1::::<><>::res://Dude2/Dude2.tscn<>res://Action RPG Resources/My Stuff/Box.tscn<>res://Action RPG Resources/My Stuff/BackgroundTile1.png<>res://Action RPG Resources/Roadautotile2.png
+Lazer.gd::GDScript::-1::1701015824::0::1::::<>Area2D<>::
+Lazer.tscn::PackedScene::-1::1701015824::0::1::::<><>::res://Lazer.gd<>res://My_Stuff/Untitled-1.png
+Projectile.gd::GDScript::-1::1701015824::0::1::::<>CharacterBody2D<>::
+Projectile.tscn::PackedScene::-1::1701015824::0::1::::<><>::res://Projectile.gd<>res://My_Stuff/Untitled-1.png
+::res://imgs/::1701035631
+spaeStationMoon - Copy.jpg::CompressedTexture2D::5816650138228927176::1701016056::1701016354::1::::<><>::
+::res://imgs/ratEnemy/::1701035681
+rat2BigMamu.png::CompressedTexture2D::966366068690754319::1700703538::1701035681::1::::<><>::
+::res://My_Stuff/::1701015824
+Goon_1.png::CompressedTexture2D::8626023785811794367::1701015824::1701015824::1::::<><>::
+Untitled-1.png::CompressedTexture2D::226084951645661456::1701015824::1701015824::1::::<><>::
+::res://My_Stuff/Goon1/::1701015824
+tile000.png::CompressedTexture2D::4341800014129685831::1701015824::1701015824::1::::<><>::
+tile001.png::CompressedTexture2D::2944548771700564714::1701015824::1701015824::1::::<><>::
+tile002.png::CompressedTexture2D::2201777231727158137::1701015824::1701015824::1::::<><>::
+tile003.png::CompressedTexture2D::7500343107161309652::1701015824::1701015824::1::::<><>::
+tile004.png::CompressedTexture2D::557290696221787236::1701015824::1701015824::1::::<><>::
+tile005.png::CompressedTexture2D::1795942581760280432::1701015824::1701015824::1::::<><>::
+tile006.png::CompressedTexture2D::4422743794920920372::1701015824::1701015824::1::::<><>::
+tile007.png::CompressedTexture2D::2062608939014445423::1701015824::1701015824::1::::<><>::
+tile008.png::CompressedTexture2D::6765958275924703702::1701015824::1701015824::1::::<><>::
+tile009.png::CompressedTexture2D::5065146278765739162::1701015824::1701015824::1::::<><>::
+tile010.png::CompressedTexture2D::1003359210864278564::1701015824::1701015824::1::::<><>::
+tile011.png::CompressedTexture2D::2598599488417824148::1701015824::1701015824::1::::<><>::
+tile012.png::CompressedTexture2D::1000288637703896699::1701015824::1701015824::1::::<><>::
+tile013.png::CompressedTexture2D::5969178708267533428::1701015824::1701015824::1::::<><>::
+tile014.png::CompressedTexture2D::1623449014686850490::1701015824::1701015824::1::::<><>::
+tile015.png::CompressedTexture2D::2267855870014549011::1701015824::1701015824::1::::<><>::
+tile016.png::CompressedTexture2D::4763741328170716933::1701015824::1701015824::1::::<><>::
+tile017.png::CompressedTexture2D::6619126766918379632::1701015824::1701015824::1::::<><>::
+tile018.png::CompressedTexture2D::6016729266953085731::1701015824::1701015824::1::::<><>::
+tile019.png::CompressedTexture2D::1485383254259567332::1701015824::1701015824::1::::<><>::
+tile020.png::CompressedTexture2D::4645696866593397954::1701015824::1701015824::1::::<><>::
+tile021.png::CompressedTexture2D::8281555485523400614::1701015824::1701015824::1::::<><>::
+tile022.png::CompressedTexture2D::7202626926657914572::1701015824::1701015824::1::::<><>::
+tile023.png::CompressedTexture2D::9056637334658259243::1701015824::1701015824::1::::<><>::
+tile024.png::CompressedTexture2D::6847747162127453611::1701015824::1701015824::1::::<><>::
+tile025.png::CompressedTexture2D::319380062124711884::1701015824::1701015824::1::::<><>::
+tile026.png::CompressedTexture2D::1972778056494106813::1701015824::1701015824::1::::<><>::
+tile027.png::CompressedTexture2D::5814776295816738488::1701015824::1701015824::1::::<><>::
+tile028.png::CompressedTexture2D::1329101401227130767::1701015824::1701015824::1::::<><>::
+tile029.png::CompressedTexture2D::3779240997205664398::1701015824::1701015824::1::::<><>::
+tile030.png::CompressedTexture2D::6749609983539796483::1701015824::1701015824::1::::<><>::
+tile031.png::CompressedTexture2D::138719729785374796::1701015824::1701015824::1::::<><>::
+tile032.png::CompressedTexture2D::6769049918039191617::1701015824::1701015824::1::::<><>::
+tile033.png::CompressedTexture2D::7182042780290558847::1701015824::1701015824::1::::<><>::
+tile034.png::CompressedTexture2D::4523884418513697637::1701015824::1701015824::1::::<><>::
+tile035.png::CompressedTexture2D::6539944650522421165::1701015824::1701015824::1::::<><>::
+tile036.png::CompressedTexture2D::2374676713693732037::1701015824::1701015824::1::::<><>::
+tile037.png::CompressedTexture2D::233541621555072487::1701015824::1701015824::1::::<><>::
+tile038.png::CompressedTexture2D::8996089819042699114::1701015824::1701015824::1::::<><>::
+tile039.png::CompressedTexture2D::6794282551790151831::1701015824::1701015824::1::::<><>::
+tile040.png::CompressedTexture2D::3327141273571393559::1701015824::1701015824::1::::<><>::
+tile041.png::CompressedTexture2D::1387946707851710789::1701015824::1701015824::1::::<><>::
+tile042.png::CompressedTexture2D::4614923267170181998::1701015824::1701015824::1::::<><>::
+tile043.png::CompressedTexture2D::5830064800416902370::1701015824::1701015824::1::::<><>::
+tile044.png::CompressedTexture2D::5436717953408746765::1701015824::1701015824::1::::<><>::
+tile045.png::CompressedTexture2D::4870450544555024382::1701015824::1701015824::1::::<><>::
+tile046.png::CompressedTexture2D::4122025501814066996::1701015824::1701015824::1::::<><>::

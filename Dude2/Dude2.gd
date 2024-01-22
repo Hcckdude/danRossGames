@@ -1,6 +1,11 @@
 extends CharacterBody2D
 
+@onready var animationPlayer = $AnimationPlayer
+@onready var animationTree = $AnimationTree
+@onready var animationState = animationTree.get("parameters/playback")
+
 const ACCELERATION = 500
+const SPEED = 300.0
 const MAX_SPEED = 100
 const ROLL_SPEED = 200
 const FRICTION = 500
@@ -10,22 +15,15 @@ const lazer = preload("res://Lazer.tscn")
 enum {
 	MOVE,
 	ROLL,
+	SHOOT,
 	}
 
 
 var state = MOVE
-
+var input_vector = Vector2.ZERO
 var roll_vector = Vector2.LEFT
-var KeyHeld = false
-var right = false;
-var left = false;
-var up = false;
-var down = false;
-
-
-@onready var animationPlayer = $AnimationPlayer
-@onready var animationTree = $AnimationTree
-@onready var animationState = animationTree.get("parameters/playback")
+var shoot_vector = Vector2.LEFT
+var canShoot = true
 
 func _ready():
 	animationTree.active = true
@@ -38,112 +36,111 @@ func _physics_process(delta):
 			
 		ROLL:
 			roll_state(delta)
+		SHOOT:
+			shoot_state(delta)
 
 func move_state(delta):
-	var input_vector = Vector2.ZERO
-	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
-	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+	input_vector = Input.get_vector( "move_left","move_right", "move_up", "move_down")
 	input_vector = input_vector.normalized()
-	
-	if Input.is_action_pressed("ui_right"):
-		right = true
-		left = false
-		up = false
-		down = false
-	
-	elif Input.is_action_pressed("ui_left"):
-		right = false
-		left = true
-		up = false
-		down = false
-
-	elif Input.is_action_pressed("ui_up"):
-		right = false
-		left = false
-		up = true
-		down = false
-		
-	elif Input.is_action_pressed("ui_down"):
-		right = false
-		left = false
-		up = false
-		down = true
-		
 	
 	if input_vector != Vector2.ZERO:
 		roll_vector = input_vector
 		animationTree.set("parameters/Idle/blend_position", input_vector)
 		animationTree.set("parameters/Walk/blend_position", input_vector)
-		animationTree.set("parameters/Roll/blend_position", input_vector)
-		animationTree.set("parameters/Aim/blend_position", input_vector)
-		animationTree.set("parameters/Shoot/blend_position", input_vector)
 		animationState.travel("Walk")
 		velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
+		velocity = input_vector * SPEED
 		
-	elif Input.is_action_pressed("aim"):
-		
-		animationState.travel("Aim")
-		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
-		
-		
-		if Input.is_action_just_pressed("shoot"):
-			var Lazer = lazer.instantiate()
-			print('lazer = ', Lazer)
-			#if sign($Position2D.postion.x) == 1:
-				#Lazer.set_lazer_direction(1)
-			#else:
-				#Lazer.set_lazer_direction(-1)
-			
-			get_parent().add_child(Lazer)
-			
-			if right:
+		if Input.is_action_just_pressed("roll"):
+			state = ROLL
+		else:
+			state = MOVE
+
+	if Input.is_action_pressed("aim"):
+		state = SHOOT
 	
-				Lazer.position = $Node2D/Position2D4.global_position
-				Lazer.set_lazer_direction(1)
-				
-			elif left:
-			
-				Lazer.position = $Node2D/Position2D3.global_position
-				Lazer.set_lazer_direction(-1)
-				
-			elif down:
-				
-				Lazer.position = $Node2D/Position2D2.global_position
-				Lazer.set_lazer_direction(1.1)
-			
-			elif up:
-			
-				Lazer.position = $Node2D/Marker2D.global_position
-				Lazer.set_lazer_direction(-1.1)
-				
-			
-
-			animationState.travel("Shoot")
-			velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
-			
-		
-		
-
-	else:
+	if input_vector == Vector2.ZERO:
 		animationState.travel("Idle")
-		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
+		velocity = Vector2.ZERO
+	
+	move_and_slide()
 		
-	move()
-		
-	if Input.is_action_just_pressed("roll"):
-		state = ROLL
 
 	
 
 func roll_state(delta):
+	animationTree.set("parameters/Roll/blend_position", input_vector)
 	velocity = roll_vector * ROLL_SPEED * 2
 	animationState.travel("Roll")
 	move()
-		
+
+func shoot_state(delta):
+	var Lazer = lazer.instantiate()
+	input_vector = Input.get_vector( "move_left","move_right", "move_up", "move_down")
+	animationTree.set('parameters/Aim/blend_position', input_vector)
+	velocity = Vector2.ZERO
+	animationState.travel("Aim")
+	get_parent().add_child(Lazer)
+
+
+	if Input.is_action_just_pressed("shoot") && canShoot:
+		animationTree.set('parameters/Shoot/blend_position', input_vector)
+		if Input.is_action_pressed("move_right"):
+			Lazer.position = $Node2D/Position2D4.global_position               
+			Lazer.set_lazer_direction(1)
+
+		elif Input.is_action_pressed("move_left"):
+			Lazer.position = $Node2D/Position2D3.global_position
+			Lazer.set_lazer_direction(-1)
+
+		elif Input.is_action_pressed("move_down"):
+			Lazer.position = $Node2D/Position2D2.global_position
+			Lazer.set_lazer_direction(1.1)
+
+		elif Input.is_action_pressed("move_up"):
+			Lazer.position = $Node2D/Marker2D.global_position
+			Lazer.set_lazer_direction(-1.1)
+		shoot()
+	if Input.is_action_just_released("aim"):
+		velocity = Vector2.ZERO
+		state = MOVE
+	move()
+	pass
+	
+func shoot():
+	velocity = Vector2.ZERO
+	animationState.travel("Shoot")
+	canShoot = false
+
+
+
+
 func move():
 	set_velocity(velocity)
 	move_and_slide()
 	velocity = velocity
 
-func roll_animation_finished():
-	state = MOVE
+
+
+func _on_animation_tree_animation_finished(anim_name):
+	print('2 finsihed animation = = = = ', anim_name)
+#	state = MOVE
+	if anim_name == 'RollRight': 
+		state = MOVE
+	if anim_name == 'RollLeft':
+		state = MOVE
+	if anim_name == 'RollUp':
+		state = MOVE
+	if anim_name == 'RollDown':
+		state = MOVE
+	if anim_name == 'ShootLeft':
+		canShoot = true
+	if anim_name == 'ShootRight':
+		canShoot = true
+	if anim_name == 'ShootUp':
+		canShoot = true
+	if anim_name == 'ShootDown':
+		canShoot = true
+#	else:
+#		state = MOVE
+#	pass # Replace with function body.
