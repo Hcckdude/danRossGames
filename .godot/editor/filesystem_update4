@@ -6,3 +6,7 @@ res://Dude2/Dude2.tscn
 res://enemy.tscn
 res://Dude2/Dude2.gd
 res://Action RPG Resources/My Stuff/Box.tscn
+res://World.gd
+res://hud.tscn
+res://enemy.gd
+res://Lazer.gd

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dgq3g7h5tt80c"]
+[gd_scene load_steps=6 format=3 uid="uid://dgq3g7h5tt80c"]
 
 [ext_resource type="Script" path="res://Lazer.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://dhrt6s7fy1ma" path="res://My_Stuff/Untitled-1.png" id="2"]
@@ -17,6 +17,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="2"]
 size = Vector2(29, 7)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yhrcn"]
+size = Vector2(69, 20)
+
 [node name="Lazer" type="Area2D"]
 rotation = 3.14159
 script = ExtResource("1")
@@ -28,10 +31,18 @@ flip_h = true
 flip_v = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(37, -0.999906)
 shape = SubResource("2")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(1.50171, -0.500545)
+position = Vector2(-0.99997, 7.82013e-05)
 scale = Vector2(3.14983, 0.750054)
 
+[node name="HitBox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(-1.50001, 6.82121e-13)
+shape = SubResource("RectangleShape2D_yhrcn")
+
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]

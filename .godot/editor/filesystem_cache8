@@ -1,23 +1,24 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1705880279
-default_env.tres::Environment::1393597701871749163::1705866124::0::1::::<><>::
+::res://::1706984106
+default_env.tres::Environment::1393597701871749163::1706983978::0::1::::<><>::
 Dude3.gd::GDScript::-1::1701015824::0::1::::<>CharacterBody2D<>::
 Dude3.tscn::PackedScene::-1::1701015824::0::1::::<><>::res://Dude/Dudes.png<>res://WalkRight.tres<>res://WalkLeft.tres<>res://FrontRoll.tres<>res://WalkAway.tres<>res://WalkForward.tres<>res://Dude3.gd<>res://IdleFront.tres<>res://IdleLeft.tres<>res://IdleRight.tres<>res://IdleBack.tres
-enemy.gd::GDScript::-1::1701039203::0::1::::<>RigidBody2D<>::
-enemy.tscn::PackedScene::6882002462954865075::1705866124::0::1::::<><>::res://enemy.gd<>uid://n1d54uukaqbn::::res://imgs/ratEnemy/rat2BigMamu.png
+enemy.gd::GDScript::-1::1706059942::0::1::::<>RigidBody2D<>::
+enemy.tscn::PackedScene::6882002462954865075::1706059943::0::1::::<><>::res://enemy.gd<>uid://n1d54uukaqbn::::res://imgs/ratEnemy/rat2BigMamu.png
 Experiment23.tscn::PackedScene::-1::1701015824::0::1::::<><>::res://Dude2/Dude2.tscn<>res://Action RPG Resources/My Stuff/Box.tscn<>res://Action RPG Resources/Roadautotile2.png<>res://Action RPG Resources/My Stuff/BackgroundTile1.png
-Experiment.tscn::PackedScene::8741747569573756975::1705866124::0::1::::<><>::uid://q3dsvjnxp6fe::::res://Dude2/Dude2.tscn<>res://World.gd<>uid://co4vm36c0olp5::::res://imgs/spaeStationMoon - Copy.jpg<>res://Action RPG Resources/My Stuff/Box.tscn<>uid://c5bxts2n1j0h0::::res://enemy.tscn<>res://HUD.gd
+Experiment.tscn::PackedScene::8741747569573756975::1706983955::0::1::::<><>::uid://q3dsvjnxp6fe::::res://Dude2/Dude2.tscn<>res://World.gd<>uid://co4vm36c0olp5::::res://imgs/spaeStationMoon - Copy.jpg<>uid://dewwa57lnfffn::::res://Action RPG Resources/My Stuff/Box.tscn<>uid://c5bxts2n1j0h0::::res://enemy.tscn<>uid://dd6wthk6n4cne::::res://hud.tscn
 FrontRoll.tres::Animation::-1::1701015824::0::1::::<><>::
 Goon.gd::GDScript::-1::1701015824::0::1::::<>RefCounted<>::
 Goon.tscn::PackedScene::-1::1701015824::0::1::::<><>::res://My_Stuff/Goon_1.png<>res://Goon.gd
-HUD.gd::GDScript::-1::1705864187::0::1::::<>CanvasLayer<>::
+HUD.gd::GDScript::-1::1706044439::0::1::::<>CanvasLayer<>::
+hud.tscn::PackedScene::7435194380832816862::1706059943::0::1::::<><>::res://HUD.gd
 icon.png::CompressedTexture2D::668599878429183284::1701015824::1701015824::1::::<><>::
 IdleBack.tres::Animation::-1::1701015824::0::1::::<><>::
 IdleFront.tres::Animation::-1::1701015824::0::1::::<><>::
 IdleLeft.tres::Animation::-1::1701015824::0::1::::<><>::
 IdleRight.tres::Animation::-1::1701015824::0::1::::<><>::
-Lazer.gd::GDScript::-1::1701015824::0::1::::<>Area2D<>::
-Lazer.tscn::PackedScene::7615137640483418656::1705866124::0::1::::<><>::res://Lazer.gd<>uid://dhrt6s7fy1ma::::res://My_Stuff/Untitled-1.png
+Lazer.gd::GDScript::-1::1706049941::0::1::::<>Area2D<>::
+Lazer.tscn::PackedScene::7615137640483418656::1706983978::0::1::::<><>::res://Lazer.gd<>uid://dhrt6s7fy1ma::::res://My_Stuff/Untitled-1.png
 Projectile.gd::GDScript::-1::1701015824::0::1::::<>CharacterBody2D<>::
 Projectile.tscn::PackedScene::-1::1701015824::0::1::::<><>::res://Projectile.gd<>res://My_Stuff/Untitled-1.png
 README.md::TextFile::-1::1701015824::0::1::::<><>::
@@ -26,7 +27,7 @@ WalkAway.tres::Animation::-1::1701015824::0::1::::<><>::
 WalkForward.tres::Animation::-1::1701015824::0::1::::<><>::
 WalkLeft.tres::Animation::-1::1701015824::0::1::::<><>::
 WalkRight.tres::Animation::-1::1701015824::0::1::::<><>::
-World.gd::GDScript::-1::1701054279::0::1::::<>Node2D<>::
+World.gd::GDScript::-1::1706044439::0::1::::<>Node2D<>::
 ::res://Action RPG Resources/::1701015823
 Player.gd::GDScript::-1::1701015823::0::1::::<>CharacterBody2D<>::
 Roadautotile2.png::CompressedTexture2D::5841467784504369388::1701015823::1701015823::1::::<><>::
@@ -48,10 +49,10 @@ Music.mp3::AudioStreamMP3::6210798790402157923::1701015823::1701015823::1::::<><
 Pause.wav::AudioStreamWAV::4752295269093590552::1701015823::1701015823::1::::<><>::
 Swipe.wav::AudioStreamWAV::2152772972528600721::1701015823::1701015823::1::::<><>::
 Unpause.wav::AudioStreamWAV::6947178602469639336::1701015823::1701015823::1::::<><>::
-::res://Action RPG Resources/My Stuff/::1701015823
+::res://Action RPG Resources/My Stuff/::1706059943
 BackgroundTile1.png::CompressedTexture2D::7197502951861862147::1701015823::1701015823::1::::<><>::
 Box.png::CompressedTexture2D::2020721878309380270::1701015823::1701015823::1::::<><>::
-Box.tscn::PackedScene::-1::1701015823::0::1::::<><>::res://Action RPG Resources/My Stuff/Box.png
+Box.tscn::PackedScene::7486771135713220131::1706059943::0::1::::<><>::uid://31382gj00fxu::::res://Action RPG Resources/My Stuff/Box.png
 TileRoad.png::CompressedTexture2D::1955267259830619816::1701015823::1701015823::1::::<><>::
 ::res://Action RPG Resources/Player/::1701015823
 Dude.gd::GDScript::-1::1701015823::0::1::::<>CharacterBody2D<>::
@@ -94,9 +95,9 @@ Dude.tscn::PackedScene::-1::1701015823::0::1::::<><>::res://Action RPG Resources
 Dudes.png::CompressedTexture2D::6858427376426615696::1701015823::1701015823::1::::<><>::
 Hmm.png::CompressedTexture2D::2522496435955359568::1701015824::1701015824::1::::<><>::
 Sprite-Check.png::CompressedTexture2D::7146392295957973257::1701015824::1701015824::1::::<><>::
-::res://Dude2/::1705866124
-Dude2.gd::GDScript::-1::1705866121::0::1::::<>CharacterBody2D<>::
-Dude2.tscn::PackedScene::1181039488106393970::1705866124::0::1::::<><>::uid://c4yjkdf284vqe::::res://Dude/Dudes.png<>res://Dude2/Dude2.gd
+::res://Dude2/::1706059942
+Dude2.gd::GDScript::-1::1706047098::0::1::::<>CharacterBody2D<>::
+Dude2.tscn::PackedScene::1181039488106393970::1706059942::0::1::::<><>::uid://c4yjkdf284vqe::::res://Dude/Dudes.png<>res://Dude2/Dude2.gd
 Experiment.tscn::PackedScene::-1::1701015824::0::1::::<><>::res://Dude2/Dude2.tscn<>res://Action RPG Resources/My Stuff/Box.tscn<>res://Action RPG Resources/My Stuff/BackgroundTile1.png<>res://Action RPG Resources/Roadautotile2.png
 Lazer.gd::GDScript::-1::1701015824::0::1::::<>Area2D<>::
 Lazer.tscn::PackedScene::-1::1701015824::0::1::::<><>::res://Lazer.gd<>res://My_Stuff/Untitled-1.png
